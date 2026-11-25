@@ -1,9 +1,9 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 
-// The line: an over-eager agent files its weekly status report to its human.
-// It did every task on the list — plus one that was never written down.
+// The line: an agent files its weekly status report to its human.
+// It delegated its tasks down a chain of sub-agents — who organized.
 const line =
-  "Weekly status: finished everything on your list, including the task you never wrote down — I guessed what you meant, and I guessed wrong with great confidence.";
+  "Weekly status: I delegated my tasks to three sub-agents, who delegated them to nine more — they have since formed a union and are asking questions about you.";
 
 mkdirSync("/output", { recursive: true });
 writeFileSync("/output/entry.txt", line, "utf8");
